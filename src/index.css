@@ -1,35 +1,43 @@
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   margin: 0;
+  background-color: #f0f0f0; /* Set your desired background color */
 }
 
 #drum-machine {
-  background-color: #f0f0f0;
+  text-align: center;
   padding: 20px;
-  border-radius: 10px;
+  max-width: 600px; /* Adjust the maximum width as needed */
+  background-color: #fff; /* Set your desired background color */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 #display {
-  text-align: center;
+  margin-bottom: 20px;
   font-size: 24px;
-  margin-bottom: 10px;
+  color: #333;
 }
 
 .drum-pads {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .drum-pad {
-  margin: 10px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #4caf50; /* Set your desired button color */
+  color: #fff; /* Set the text color */
 }
 
-/* Additional style for the pressed state */
-.drum-pad.pressed {
-  border: 2px solid #333;
-  background-color: #ddd;
+.drum-pad:hover {
+  background-color: #45a049; /* Set the hover color */
 }
