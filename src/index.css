@@ -1,13 +1,35 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#drum-machine {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.drum-pads {
+  display: flex;
+  justify-content: center;
+}
+
+.drum-pad {
+  margin: 10px;
+}
+
+/* Additional style for the pressed state */
+.drum-pad.pressed {
+  border: 2px solid #333;
+  background-color: #ddd;
 }
